@@ -1,0 +1,26 @@
+// Script για δημιουργία PNG icons από emoji
+const canvas = document.createElement('canvas');
+const ctx = canvas.getContext('2d');
+
+function createIcon(emoji, size, filename) {
+    canvas.width = size;
+    canvas.height = size;
+    
+    ctx.fillStyle = '#764ba2';
+    ctx.fillRect(0, 0, size, size);
+    
+    ctx.font = `${size * 0.7}px Arial`;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = 'white';
+    ctx.fillText(emoji, size/2, size/2);
+    
+    const link = document.createElement('a');
+    link.download = filename;
+    link.href = canvas.toDataURL();
+    link.click();
+}
+
+// Δημιουργία icons
+createIcon('🚁', 192, 'icon-192x192.png');
+createIcon('🚁', 512, 'icon-512x512.png');

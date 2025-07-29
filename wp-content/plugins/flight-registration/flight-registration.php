@@ -3,7 +3,7 @@
  * Plugin Name: Καταχώρηση Πτήσεων
  * Plugin URI: 
  * Description: Σύστημα καταχώρησης και διαχείρισης πτήσεων UAV
- * Version: 1.0.0
+ * Version: 1.2.0
  * Author: LEFOS
  * Text Domain: flight-registration
  * Domain Path: /languages
@@ -200,5 +200,58 @@ function redirect_home_to_dashboard() {
 }
 add_action( 'template_redirect', 'redirect_home_to_dashboard' );
 
+// Service Worker Registration - ΔΙΟΡΘΩΜΕΝΟ
+function flight_registration_register_sw() {
+    ?>
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('<?php echo plugin_dir_url( __FILE__ ); ?>assets/js/sw.js', {
+                scope: '<?php echo admin_url('admin.php?page=flight-dashboard'); ?>'
+            })
+            .then(function(registration) {
+                console.log('🚁 UAV Dashboard SW: Registered successfully');
+                console.log('Scope:', registration.scope);
+                
+                // Manual install prompt
+                window.addEventListener('beforeinstallprompt', (e) => {
+                    console.log('🚁 PWA: Install prompt available!');
+                    e.preventDefault();
+                    
+                    // Show custom install button
+                    if (confirm('🚁 UAV Dashboard PWA\n\nΘέλετε να εγκαταστήσετε το UAV Dashboard ως εφαρμογή;\n\n✅ Offline access\n✅ Native app experience\n✅ Push notifications')) {
+                        e.prompt();
+                    }
+                });
+            })
+            .catch(function(error) {
+                console.log('🚁 UAV Dashboard SW: Registration failed', error);
+            });
+        });
+    }
+    </script>
+    <?php
+}
+add_action( 'admin_footer', 'flight_registration_register_sw' );
+
+// PWA Meta Tags και Manifest - 
+function flight_registration_pwa_meta() {
+    ?>
+    <!-- PWA Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="UAV Dashboard">
+    <meta name="theme-color" content="#764ba2">
+    
+    <!-- Manifest Link -->
+    <link rel="manifest" href="<?php echo plugin_dir_url( __FILE__ ); ?>assets/manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo plugin_dir_url( __FILE__ ); ?>assets/icons/icon-32x32.png">
+    <?php
+}
+add_action( 'admin_head', 'flight_registration_pwa_meta' );
+    
 
 ?>
