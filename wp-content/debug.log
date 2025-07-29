@@ -1,0 +1,138 @@
+[17-Jul-2025 10:07:39 UTC] Automatic updates starting...
+[17-Jul-2025 10:07:40 UTC]   Automatic plugin updates starting...
+[17-Jul-2025 10:07:40 UTC]   Automatic plugin updates complete.
+[17-Jul-2025 10:07:40 UTC] Automatic updates complete.
+[17-Jul-2025 10:09:15 UTC] PHP Deprecated:  Το αρχείο wp-db.php <strong>είναι παρωχημένο</strong> από την έκδοση 6.1.0! Χρησιμοποιήστε το wp-includes/class-wpdb.php αντ' αυτού. in C:\xampp\htdocs\flight-registration-wordpress\wp-includes\functions.php on line 6121
+[29-Jul-2025 06:20:39 UTC] PHP Warning:  wp_update_plugins(): Ένα αναπάντεχο σφάλμα παρουσιάστηκε. Κάτι μπορει να είναι λάθος με το WordPress.org ή με τις ρυθμίσεις του διακομιστή. Αν συνεχίστε να έχετε προβλήματα, δοκιμάστε τα <a href="https://el.wordpress.org/support/forums/ ">φόρα υποστήριξης</a> (Το WordPress δεν κατάφερε να δημιουργήσει μια ασφαλή σύνδεση με το WordPress.org. Παρακαλώ επικοινωνήστε με το διαχειριστή του διακομιστή σας.) in C:\xampp\htdocs\flight-registration-wordpress\wp-includes\functions.php on line 6121
+[29-Jul-2025 06:20:39 UTC] PHP Warning:  wp_update_themes(): Ένα αναπάντεχο σφάλμα παρουσιάστηκε. Κάτι μπορει να είναι λάθος με το WordPress.org ή με τις ρυθμίσεις του διακομιστή. Αν συνεχίστε να έχετε προβλήματα, δοκιμάστε τα <a href="https://el.wordpress.org/support/forums/ ">φόρα υποστήριξης</a> (Το WordPress δεν κατάφερε να δημιουργήσει μια ασφαλή σύνδεση με το WordPress.org. Παρακαλώ επικοινωνήστε με το διαχειριστή του διακομιστή σας.) in C:\xampp\htdocs\flight-registration-wordpress\wp-includes\functions.php on line 6121
+[29-Jul-2025 06:20:39 UTC] PHP Warning:  wp_version_check(): Ένα αναπάντεχο σφάλμα παρουσιάστηκε. Κάτι μπορει να είναι λάθος με το WordPress.org ή με τις ρυθμίσεις του διακομιστή. Αν συνεχίστε να έχετε προβλήματα, δοκιμάστε τα <a href="https://el.wordpress.org/support/forums/ ">φόρα υποστήριξης</a> (Το WordPress δεν κατάφερε να δημιουργήσει μια ασφαλή σύνδεση με το WordPress.org. Παρακαλώ επικοινωνήστε με το διαχειριστή του διακομιστή σας.) in C:\xampp\htdocs\flight-registration-wordpress\wp-includes\functions.php on line 6121
+[29-Jul-2025 06:20:39 UTC] PHP Warning:  get_core_checksums(): Ένα αναπάντεχο σφάλμα παρουσιάστηκε. Κάτι μπορει να είναι λάθος με το WordPress.org ή με τις ρυθμίσεις του διακομιστή. Αν συνεχίστε να έχετε προβλήματα, δοκιμάστε τα <a href="https://el.wordpress.org/support/forums/ ">φόρα υποστήριξης</a> (Το WordPress δεν κατάφερε να δημιουργήσει μια ασφαλή σύνδεση με το WordPress.org. Παρακαλώ επικοινωνήστε με το διαχειριστή του διακομιστή σας.) in C:\xampp\htdocs\flight-registration-wordpress\wp-includes\functions.php on line 6121
+[29-Jul-2025 06:20:40 UTC] PHP Warning:  translations_api(): Ένα αναπάντεχο σφάλμα παρουσιάστηκε. Κάτι μπορει να είναι λάθος με το WordPress.org ή με τις ρυθμίσεις του διακομιστή. Αν συνεχίστε να έχετε προβλήματα, δοκιμάστε τα <a href="https://el.wordpress.org/support/forums/ ">φόρα υποστήριξης</a> (Το WordPress δεν κατάφερε να δημιουργήσει μια ασφαλή σύνδεση με το WordPress.org. Παρακαλώ επικοινωνήστε με το διαχειριστή του διακομιστή σας.) in C:\xampp\htdocs\flight-registration-wordpress\wp-includes\functions.php on line 6121
+[29-Jul-2025 06:20:46 UTC] PHP Warning:  translations_api(): Ένα αναπάντεχο σφάλμα παρουσιάστηκε. Κάτι μπορει να είναι λάθος με το WordPress.org ή με τις ρυθμίσεις του διακομιστή. Αν συνεχίστε να έχετε προβλήματα, δοκιμάστε τα <a href="https://el.wordpress.org/support/forums/ ">φόρα υποστήριξης</a> (Το WordPress δεν κατάφερε να δημιουργήσει μια ασφαλή σύνδεση με το WordPress.org. Παρακαλώ επικοινωνήστε με το διαχειριστή του διακομιστή σας.) in C:\xampp\htdocs\flight-registration-wordpress\wp-includes\functions.php on line 6121
+[29-Jul-2025 06:48:48 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\form-handler.php on line 72
+[29-Jul-2025 06:48:55 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\form-handler.php on line 72
+[29-Jul-2025 06:48:58 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\form-handler.php on line 72
+[29-Jul-2025 06:49:02 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\form-handler.php on line 72
+[29-Jul-2025 06:49:20 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\form-handler.php on line 72
+[29-Jul-2025 06:49:21 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\form-handler.php on line 72
+[29-Jul-2025 06:49:23 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\form-handler.php on line 72
+[29-Jul-2025 06:54:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_flights_table() in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:90
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(324): ajax_refresh_flights_list('')
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_refresh...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 90
+[29-Jul-2025 06:58:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_flights_table() in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:90
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(324): ajax_refresh_flights_list('')
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_refresh...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 90
+[29-Jul-2025 07:13:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_flights_table() in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:90
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(324): ajax_refresh_flights_list('')
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_refresh...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 90
+[29-Jul-2025 07:37:50 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_καταχώρηση_Πτήσεων CHANGE COLUMN `id` id INT AUTO_INCREMENT PRIMARY KEY made by activate_plugin, do_action('activate_flight-registration/flight-registration.php'), WP_Hook->do_action, WP_Hook->apply_filters, flight_registration_activate, create_flight_table, dbDelta
+[29-Jul-2025 07:38:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_flights_table() in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:90
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(324): ajax_refresh_flights_list('')
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_refresh...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 90
+[29-Jul-2025 07:41:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_flights_table() in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:90
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(324): ajax_refresh_flights_list('')
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_refresh...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 90
+[29-Jul-2025 07:51:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function display_flights_table() in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:90
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(324): ajax_refresh_flights_list('')
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_refresh...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 90
+[29-Jul-2025 07:56:19 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 60
+[29-Jul-2025 07:56:26 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 60
+[29-Jul-2025 07:56:27 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 60
+[29-Jul-2025 07:56:28 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 60
+[29-Jul-2025 07:56:30 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 60
+[29-Jul-2025 07:56:31 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 60
+[29-Jul-2025 07:56:35 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 60
+[29-Jul-2025 07:56:42 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 60
+[29-Jul-2025 07:58:53 UTC] PHP Parse error:  Unclosed '{' on line 16 in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 200
+[29-Jul-2025 07:58:59 UTC] PHP Parse error:  Unclosed '{' on line 16 in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 200
+[29-Jul-2025 07:59:02 UTC] PHP Parse error:  Unclosed '{' on line 16 in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 200
+[29-Jul-2025 07:59:07 UTC] PHP Parse error:  Unclosed '{' on line 16 in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 200
+[29-Jul-2025 07:59:25 UTC] PHP Parse error:  Unclosed '{' on line 16 in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 200
+[29-Jul-2025 07:59:35 UTC] PHP Parse error:  Unclosed '{' on line 16 in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\database.php on line 199
+[29-Jul-2025 07:59:53 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_καταχώρηση_Πτήσεων CHANGE COLUMN `id` id INT AUTO_INCREMENT PRIMARY KEY made by activate_plugin, do_action('activate_flight-registration/flight-registration.php'), WP_Hook->do_action, WP_Hook->apply_filters, flight_registration_activate, create_flight_table, dbDelta
+[29-Jul-2025 08:03:40 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_καταχώρηση_Πτήσεων CHANGE COLUMN `id` id INT AUTO_INCREMENT PRIMARY KEY made by activate_plugin, do_action('activate_flight-registration/flight-registration.php'), WP_Hook->do_action, WP_Hook->apply_filters, flight_registration_activate, create_flight_table, dbDelta
+[29-Jul-2025 08:14:45 UTC] PHP Fatal error:  Cannot redeclare handle_flight_form_submission() (previously declared in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\form-handler.php:10) in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\templates\admin-page.php on line 8
+[29-Jul-2025 08:14:57 UTC] PHP Fatal error:  Cannot redeclare handle_flight_form_submission() (previously declared in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\includes\form-handler.php:10) in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\templates\admin-page.php on line 8
+[29-Jul-2025 08:32:44 UTC] PHP Warning:  Undefined array key "nonce" in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 125
+[29-Jul-2025 08:44:55 UTC] Automatic updates starting...
+[29-Jul-2025 08:44:55 UTC] Automatic updates complete.
+[29-Jul-2025 08:56:38 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_καταχώρηση_Πτήσεων CHANGE COLUMN `id` id INT AUTO_INCREMENT PRIMARY KEY made by activate_plugin, do_action('activate_flight-registration/flight-registration.php'), WP_Hook->do_action, WP_Hook->apply_filters, flight_registration_activate, create_flight_table, dbDelta
+[29-Jul-2025 09:09:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_create_nonce() in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:75
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-settings.php(545): include_once()
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-config.php(81): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 75
+[29-Jul-2025 09:10:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_create_nonce() in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:75
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-settings.php(545): include_once()
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-config.php(81): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 75
+[29-Jul-2025 09:12:03 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\templates\dashboard-index.php on line 2
+[29-Jul-2025 09:12:17 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_καταχώρηση_Πτήσεων CHANGE COLUMN `id` id INT AUTO_INCREMENT PRIMARY KEY made by activate_plugin, do_action('activate_flight-registration/flight-registration.php'), WP_Hook->do_action, WP_Hook->apply_filters, flight_registration_activate, create_flight_table, dbDelta
+[29-Jul-2025 09:12:20 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\templates\dashboard-index.php on line 2
+[29-Jul-2025 09:16:17 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\templates\dashboard-index.php on line 2
+[29-Jul-2025 09:16:20 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\templates\dashboard-index.php on line 2
+[29-Jul-2025 09:16:31 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\templates\dashboard-index.php on line 2
+[29-Jul-2025 09:27:08 UTC] PHP Warning:  require_once(C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration/templates/dashboard-index.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 102
+[29-Jul-2025 09:27:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration/templates/dashboard-index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:102
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(324): flight_registration_dashboard_page('')
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin.php(260): do_action('toplevel_page_f...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 102
+[29-Jul-2025 09:27:19 UTC] PHP Warning:  require_once(C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration/templates/dashboard-index.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 102
+[29-Jul-2025 09:27:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration/templates/dashboard-index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:102
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(324): flight_registration_dashboard_page('')
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin.php(260): do_action('toplevel_page_f...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 102
+[29-Jul-2025 09:27:26 UTC] PHP Warning:  require_once(C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration/templates/dashboard-index.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 102
+[29-Jul-2025 09:27:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration/templates/dashboard-index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php:102
+Stack trace:
+#0 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(324): flight_registration_dashboard_page('')
+#1 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\flight-registration-wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\flight-registration-wordpress\wp-admin\admin.php(260): do_action('toplevel_page_f...')
+#4 {main}
+  thrown in C:\xampp\htdocs\flight-registration-wordpress\wp-content\plugins\flight-registration\flight-registration.php on line 102
