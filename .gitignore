@@ -1,0 +1,40 @@
+# WordPress Core Files
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/
+wp-content/debug.log
+
+# System Files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+vendor/
+
+# Sensitive Files
+.env
+.htaccess
+
+# Backup Files
+*.backup
+*~
+*.bak
+
+# Temporary Files
+*.tmp
+*.temp

@@ -253,5 +253,174 @@ function flight_registration_pwa_meta() {
 }
 add_action( 'admin_head', 'flight_registration_pwa_meta' );
     
+// Frontend Support - 
+
+
+// Shortcode για Frontend Dashboard
+function flight_frontend_dashboard_shortcode($atts) {
+    if (!is_user_logged_in()) {
+        return '<div class="flight-login-required">
+            <h3>🚁 UAV Dashboard Access</h3>
+            <p>Χρειάζεται σύνδεση για πρόσβαση στο Dashboard.</p>
+            <a href="' . wp_login_url(get_permalink()) . '" class="btn-login">Σύνδεση</a>
+            <a href="' . wp_registration_url() . '" class="btn-register">Εγγραφή</a>
+        </div>';
+    }
+    
+    ob_start();
+    include plugin_dir_path(__FILE__) . 'templates/frontend-dashboard.php';
+    return ob_get_clean();
+}
+add_shortcode('uav_dashboard', 'flight_frontend_dashboard_shortcode');
+
+
+
+// AJAX Handler για Frontend Form Submission
+function handle_frontend_flight_submission() {
+    // Verify nonce
+    if (!wp_verify_nonce($_POST['flight_nonce'], 'frontend_flight_nonce')) {
+        wp_send_json_error(array('message' => 'Σφάλμα ασφαλείας!'));
+        return;
+    }
+    
+    if (!is_user_logged_in()) {
+        wp_send_json_error(array('message' => 'Χρειάζεται σύνδεση!'));
+        return;
+    }
+    
+    $current_user = wp_get_current_user();
+    
+    // Sanitize data για το ΥΠΑΡΧΟΝ schema
+    $flight_date = sanitize_text_field($_POST['flight_date']);
+    $flight_time = sanitize_text_field($_POST['flight_time']);
+    $duration = intval($_POST['duration']);
+    $location = sanitize_text_field($_POST['location']);
+    $uav_model = sanitize_text_field($_POST['uav_model']);
+    $pilot_name = sanitize_text_field($_POST['pilot_name']);
+    $purpose = sanitize_text_field($_POST['purpose']);
+    $notes = sanitize_textarea_field($_POST['notes'] ?? '');
+    
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'καταχώρηση_Πτήσεων'; // ΥΠΑΡΧΟΝ table name
+    
+    // Insert με τα ΣΩΣΤΑ field names
+    $result = $wpdb->insert(
+        $table_name,
+        array(
+            'DATE' => $flight_date,                    // DATE ( flight_date)
+            'OPERATOR' => $pilot_name,                 // OPERATOR ( pilot_name)
+            'OPERATOR_ROLE' => 'Pilot',               // OPERATOR_ROLE (σταθερό)
+            'UAV_TYPE' => $uav_model,                 // UAV_TYPE (uav_model)
+            'AIRCRAFT' => $uav_model,                 // AIRCRAFT (ίδιο με UAV_TYPE)
+            'BEGIN_FLIGHT' => $flight_time,           // BEGIN_FLIGHT ( flight_time)
+            'FLIGHT_TIME' => $duration,               // FLIGHT_TIME ( duration)
+            'ΓΕΝΙΚΗ_ΔΝΣΗ' => $location,               // ΓΕΝΙΚΗ_ΔΝΣΗ ( location)
+            'Δ_ΝΣΗ_ΑΣΤΥΝ' => '',                     // Δ_ΝΣΗ_ΑΣΤΥΝ (άδειο)
+            'LoS' => 'VLOS',                         // LoS (σταθερό)
+            'FLIGHT_TYPE' => 'Operational',          // FLIGHT_TYPE (σταθερό)
+            'FLIGHT_PURPOSE' => $purpose,            // FLIGHT_PURPOSE ( purpose)
+            'ΔΙΑΤΑΓΗ' => '',                         // ΔΙΑΤΑΓΗ (άδειο)
+            'ΠΑΡΑΤΗΡΗΣΕΙΣ' => $notes                 // ΠΑΡΑΤΗΡΗΣΕΙΣ ( notes)
+        ),
+        array('%s', '%s', '%s', '%s', '%s', '%s', '%d', '%s', '%s', '%s', '%s', '%s', '%s', '%s')
+    );
+    
+    if ($result === false) {
+        wp_send_json_error(array(
+            'message' => 'Database Error: ' . $wpdb->last_error,
+            'debug' => $wpdb->last_query
+        ));
+        return;
+    }
+    
+    wp_send_json_success(array(
+        'message' => 'Η πτήση καταχωρήθηκε επιτυχώς! 🚁✅'
+    ));
+}
+add_action('wp_ajax_frontend_submit_flight', 'handle_frontend_flight_submission');
+
+
+
+
+
+// Shortcode για Flight Registration Form
+function flight_frontend_form_shortcode($atts) {
+    if (!is_user_logged_in()) {
+        return '<p>Χρειάζεται σύνδεση για καταχώρηση πτήσης.</p>';
+    }
+    
+    ob_start();
+    include plugin_dir_path(__FILE__) . 'templates/frontend-form.php';
+    return ob_get_clean();
+}
+add_shortcode('uav_form', 'flight_frontend_form_shortcode');
+
+
+// Frontend Support Functions -
+function get_user_flights($user_id) {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'καταχώρηση_Πτήσεων';
+    
+    // Χρησιμοποιούμε OPERATOR αντί για user_id (δεν υπάρχει user_id στο schema)
+    $current_user = get_user_by('ID', $user_id);
+    $operator_name = $current_user->display_name;
+    
+    $results = $wpdb->get_results($wpdb->prepare(
+        "SELECT * FROM $table_name WHERE OPERATOR = %s ORDER BY DATE DESC",
+        $operator_name
+    ));
+    
+    return $results ? $results : array();
+}
+
+// Frontend Enqueue Scripts
+function flight_registration_frontend_enqueue_scripts() {
+    if (!is_admin()) {
+        wp_enqueue_style(
+            'flight-frontend-style',
+            plugin_dir_url(__FILE__) . 'assets/css/frontend-style.css',
+            array(),
+            '1.2.0'
+        );
+
+        wp_enqueue_script(
+            'flight-frontend-script',
+            plugin_dir_url(__FILE__) . 'assets/js/frontend-script.js',
+            array('jquery'),
+            '1.2.0',
+            true
+        );
+
+        wp_localize_script('flight-frontend-script', 'flight_frontend_ajax', array(
+            'ajax_url' => admin_url('admin-ajax.php'),
+            'nonce' => wp_create_nonce('flight_frontend_nonce')
+        ));
+    }
+}
+add_action('wp_enqueue_scripts', 'flight_registration_frontend_enqueue_scripts');
+
+// Elementor Integration
+function register_uav_elementor_widgets() {
+    // Έλεγχος αν το Elementor είναι φορτωμένο
+    if (!did_action('elementor/loaded')) {
+        return;
+    }
+    
+    // Έλεγχος αν το αρχείο υπάρχει
+    $widget_file = plugin_dir_path(__FILE__) . 'elementor/uav-dashboard-widget.php';
+    if (!file_exists($widget_file)) {
+        return;
+    }
+    
+    require_once $widget_file;
+    
+    // Έλεγχος αν η κλάση υπάρχει
+    if (class_exists('UAV_Dashboard_Widget')) {
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \UAV_Dashboard_Widget());
+    }
+}
+add_action('elementor/widgets/widgets_registered', 'register_uav_elementor_widgets');
+
+
 
 ?>
